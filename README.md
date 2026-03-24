@@ -56,7 +56,21 @@ export ZHIPUAI_API_KEY="your-api-key"
 
 **注意**: 虽然代码示例主要使用 Python 编写，但这些概念可以适配到任何支持与 LLM API 交互的编程语言。
 
-如果你是 API 新手，建议先学习我们的 [Claude API 基础课程](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals) 来打好基础。
+如果你是 API 新手，建议先学习以下资源：
+
+### 中文资源（推荐）
+
+1. **GLM-5 快速开始**: [智谱 AI 开发者文档](https://open.bigmodel.cn/dev/api)
+2. **本仓库适配示例**: [glm5_adaptation/](./glm5_adaptation/)
+
+### 英文资源
+
+1. **Claude API 基础课程**（英文）: [anthropic_api_fundamentals](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals)
+   - 💡 建议：使用浏览器翻译功能辅助阅读
+
+---
+
+**TODO**: 我们计划翻译 Claude API 基础课程到中文，欢迎贡献！
 
 ## 延伸阅读
 
