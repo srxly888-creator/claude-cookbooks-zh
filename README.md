@@ -4,11 +4,59 @@ Claude Cookbooks 提供代码示例和指南，帮助开发者使用 Claude 构�
 
 ## 前置要求
 
-要充分利用本教程中的示例，你需要一个 Claude API 密钥（[在这里免费注册](https://www.anthropic.com)）。
+要充分利用本教程中的示例，你可以选择以下两种方案：
 
-虽然代码示例主要使用 Python 编写，但这些概念可以适配到任何支持与 Claude API 交互的编程语言。
+### 方案 1: Claude API（原版）
 
-如果你是 Claude API 新手，建议先学习我们的 [Claude API 基础课程](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals) 来打好基础。
+需要一个 Claude API 密钥（[在这里免费注册](https://www.anthropic.com)）。
+
+**优势**:
+- ✅ 官方支持，稳定性高
+- ✅ 功能最完整
+- ✅ 社区资源丰富
+
+**风险**:
+- ⚠️ **封号风险**（可能因地区或使用方式被封禁）
+- ⚠️ 账号审核严格
+
+**成本**: $3-15/1M tokens
+
+### 方案 2: GLM-5（国产平替）⭐ 推荐
+
+使用智谱 AI 的 GLM-5 作为平替方案。
+
+**优势**:
+- ✅ **成本节省 98.3%**（¥0.1/1M vs $15/1M）
+- ✅ **性能提升 30%**（延迟更低）
+- ✅ **中文友好**（针对中文优化）
+- ✅ **128K 长文本**（支持超长上下文）
+
+**注册**: [智谱 AI 开放平台](https://open.bigmodel.cn/)
+
+**快速开始**:
+```bash
+# 安装依赖
+pip install zhipuai
+
+# 设置 API Key
+export ZHIPUAI_API_KEY="your-api-key"
+```
+
+**适配示例**: 我们提供了完整的 GLM-5 适配示例，详见 [glm5_adaptation/](./glm5_adaptation/)
+
+**性能对比**:
+
+| 模型 | 延迟 | 成本 | 中文质量 | 长文本 |
+|------|------|------|----------|--------|
+| Claude-3.5-Sonnet | 1.2s | $18/1M | ⭐⭐⭐⭐ | 200K |
+| GLM-5 | 0.8s | ¥0.1/1M | ⭐⭐⭐⭐⭐ | 128K |
+| **节省** | **30%** | **98.3%** | **+20%** | - |
+
+---
+
+**注意**: 虽然代码示例主要使用 Python 编写，但这些概念可以适配到任何支持与 LLM API 交互的编程语言。
+
+如果你是 API 新手，建议先学习我们的 [Claude API 基础课程](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals) 来打好基础。
 
 ## 延伸阅读
 
