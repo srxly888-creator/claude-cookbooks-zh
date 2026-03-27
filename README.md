@@ -68,9 +68,12 @@ export ZHIPUAI_API_KEY="your-api-key"
 1. **Claude API 基础课程**（英文）: [anthropic_api_fundamentals](https://github.com/anthropics/courses/tree/master/anthropic_api_fundamentals)
    - 💡 建议：使用浏览器翻译功能辅助阅读
 
----
+### 翻译贡献
 
-**TODO**: 我们计划翻译 Claude API 基础课程到中文，欢迎贡献！
+- Claude API 基础课程的中文版本见 [courses_zh/anthropic_api_fundamentals](./courses_zh/anthropic_api_fundamentals/README.md)
+- 新增或更新 notebook 时，建议先用 `python courses_zh/translate_notebook.py <输入.ipynb> <输出_zh.ipynb>` 生成初稿
+- 翻译时请只改 markdown 单元，代码单元保持与原文一致
+- 提交前建议运行 `python scripts/validate_notebooks.py` 和 `python scripts/test_notebooks.py`
 
 ## 延伸阅读
 
@@ -165,6 +168,7 @@ Claude Cookbooks 的发展离不开开发者社区的贡献。无论是提交想
 
 | 分类 | Notebooks | 状态 |
 |------|-----------|------|
+| Claude API 基础教程 | 6 | ✅ 已完成 |
 | 核心能力 | 5 | ✅ 已完成 |
 | 工具使用 | 13 | ✅ 已完成 |
 | Agent 模式 | 3 | ✅ 已完成 |
